@@ -1,0 +1,49 @@
+
+
+
+.section-one{
+  height: 550px;
+  width: 100vw;
+  box-sizing: border-box;
+  background-image: url('https://images.unsplash.com/photo-1504025468847-0e438279542c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=835&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #f6f6f6;
+  
+}
+
+.logo-container{
+  height: 50px;
+  width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+}
+
+.section-one-content{
+  height: calc(100% - 50px);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  
+}
+
+.section-two{
+  height: 50vw;
+  width: 100vw;
+  
+}
+
+.section-three{
+  height: 25vw;
+  width: 100vw;
+  /* background-color: black; */
+}
+
+.section-four{
+  height: 25vw;
+  width: 100vw;
+  
+}
