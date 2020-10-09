@@ -9,8 +9,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: #f6f6f6;
   
+  
+}
+
+.section-one-dimmer{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.3);
 }
 
 .logo-container{
@@ -33,7 +39,7 @@
 
 
 .section-three{
- 
+  background-color: RGB(246, 246, 246) ;
 }
 
 .slideshow-container {
