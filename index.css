@@ -120,7 +120,35 @@
   to {opacity: 1}
 }
 
-.section-four{
+.section-five-header{
+  height: 300px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.section-five img{
+  width: 60vw
+}
+
+.section-five-footer{
+  height: 300px;
+  width: 100vw;
+  background-image: url('https://images.unsplash.com/photo-1530143311094-34d807799e8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   
-  
+}
+
+@media(max-width: 450px ){
+  .section-five-header{
+    margin-top: 10px
+  }
+
+  .section-five img{
+    width: 100vw
+  }
 }
