@@ -22,13 +22,13 @@
           />
         </div>
 
-        <div class="section-one-content">
-          <div class="ui container">
+        <div class="section-one-content" >
+          <div class="ui container" style='width: 80vw'>
             <div class="ui inverted centered huge header">
               When you’re putting in the hours
             </div>
 
-            <div class="ui inverted small header">
+            <div class="ui centered inverted small header" >
               There’s nothing worse than running out of battery when you’re in
               the middle of an epic training run. That is, unless you lose
               battery and your GPS capabilities, too.
@@ -70,33 +70,40 @@
         </div>
       </div>
 
-      <div class="section-three">
-        <div class='ui container'>
-        <div class="ui centered huge header">
+      <div class='ui container'>
+        <div class="ui horizontal divider">
           At a Glance
-          <div class='sub header'>The Suunto 9 was designed to help serious athletes stay focused on their sport longer with a variety of performance and durability features.</div>
+        </div>
+        </div>
+
+      <div class="section-three">
+        <div class='ui container' style='width: 80vw; margin-bottom: 25px; padding-top: 10px;'>
+        <div class="ui centered huge header">
+          The Suunto 9 was designed to help serious athletes stay focused on their sport longer with a variety of performance and durability features.
+          
         </div>
       </div>
       
       <div class="slideshow-container">
+        
         <div class="mySlides fade">
-          <img class='ui image' src="https://www.suunto.com/globalassets/productimages/suunto-9/black/product-on-wrist/ss050142000-suunto-9-black-product-on-wrist-800x800px-02.jpg?height=550&format=jpg&bgcolor=f6f6f6" >
-          
-          <div class="ui centered large header"><img class="ui avatar image" src="assets/durable.png">Serious durability</div>
-          <div class='text'>The Suunto 9 endured intense testing at the factory as well as by athletes around the world. It’s built to take a beating.</div>
+          <img class='ui image' src="https://www.suunto.com/link/00698f5ad4b640948e2780918a44a193.aspx?mode=max&w=570&format=jpg" >
+          <div class="ui centered large header">Serious durability</div>
+          <div class='text'>The Suunto 9 endured intense testing at the factory as well as by athletes around the world. It’s built to take a beating, and is your trusted companion to confidently see you through any adventure!</div>
         </div>
       
         <div class="mySlides fade"> 
-          <img class='ui large image' src="https://www.suunto.com/globalassets/productimages/suunto-9/black/expressive-images/ss050142000-suunto-9-g1-black-expressive-view-b-01.png?height=550&format=jpg&bgcolor=f6f6f6" >
-          <div class="ui centered large header"><img class="ui avatar image" src="assets/battery.png">Tested tough battery
+          <img class='ui huge image' src="https://www.suunto.com/link/773d1570a58b42729389852815a66be6.aspx?mode=max&w=570&format=jpg" >
+          
+          <div class="ui centered large header">Tested tough battery
           </div>
           <div class='text'>Charging reminders, battery life estimates and three predefined battery modes — Performance, Endurance and Ultra — deliver from 25 to 120 hours of recording time.</div>
         </div>
       
         <div class="mySlides fade">
-          <img class='ui large image' src="https://www.suunto.com/globalassets/productimages/suunto-9/mobile-app/suunto-app-post-workout-applemap-800x800px-02.png?height=550&format=jpg&bgcolor=f6f6f6">
+          <img class='ui huge image' src="https://www.suunto.com/link/32f3881aa52c4bb68de46e0a8cdb3390.aspx?mode=max&w=570&format=jpg">
           
-          <div class="ui centered large header"><img class="ui avatar image" src="assets/fusetrack.png"> More accurate tracking
+          <div class="ui centered large header"> More accurate tracking
             </div>
             <div class='text'>The FuseTrack™ algorithm combines GPS and motion sensor data to improve track and distance accuracy, allowing you to lower GPS power without compromising accuracy.</div>
         </div>
@@ -104,11 +111,19 @@
         
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div style="text-align:center">
+          <img src='assets/durable.png' class="dot" onclick="currentSlide(1)"></img> 
+          <img src='assets/battery.png' class="dot" onclick="currentSlide(2)"></img> 
+          <img src='assets/fusetrack.png' class="dot" onclick="currentSlide(3)"></img> 
+        </div>
       </div>
       <br>
+
       
       
-      
+      <!-- <div class='ui container'>
+      <div class="ui section divider"></div>
+      </div> -->
       </div>
       
       <div class="section-four">
@@ -138,10 +153,15 @@
     </div>
     </div>
 
+    <!-- <div class='ui container'>
+      <div class="ui section divider"></div>
+      </div> -->
+
     <div class='section-five'>
       <div class='section-five-header'>
       <img src='assets/watches.png'/>
       </div>
+
       
       <div class='ui container'>
       <div class="ui centered huge header">
@@ -180,13 +200,17 @@
       function showSlides(n) {
         var i;
         var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
         if (n > slides.length) {slideIndex = 1}    
         if (n < 1) {slideIndex = slides.length}
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";  
         }
+        for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
         slides[slideIndex-1].style.display = "block";  
-        
+        dots[slideIndex-1].className += " active";
       }
       </script>
   </body>

@@ -37,16 +37,19 @@
   
 }
 
+.section-two{
+  margin-top: 25px;
+}
 
 
 .section-three{
   height: auto;
   width: 100vw;
-  background-color: RGB(246, 246, 246) ;
+  /* background-color: RGB(246, 246, 246) ; */
 }
 
 .slideshow-container {
-  width: 40vw;
+  width: 50vw;
   position: relative;
   margin: auto;
 }
@@ -98,9 +101,9 @@
 
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
+  height: 50px;
+  width: 50px;
+  margin: 10px 2px 0px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -108,7 +111,7 @@
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: RGB(42, 126, 172);
 }
 
 
@@ -129,8 +132,17 @@
   to {opacity: 1}
 }
 
-.section-five{
+.section-four{
   background-color: RGB(246, 246, 246)
+}
+
+.section-four p{
+  text-align: left;
+  
+}
+
+.section-five{
+  /* background-color: RGB(246, 246, 246) */
 }
 
 .section-five-header{
