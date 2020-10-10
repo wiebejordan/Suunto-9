@@ -126,6 +126,10 @@
   to {opacity: 1}
 }
 
+.section-five{
+  background-color: RGB(246, 246, 246)
+}
+
 .section-five-header{
   height: 300px;
   width: 100vw;
@@ -133,6 +137,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  
 }
 
 .section-five img{
@@ -149,6 +154,25 @@
   
 }
 
+.footer-content{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
+
+
+.section-five button{
+  height: 40px;
+  width: 125px;
+  border: none;
+  background-color:
+  RGB(42, 126, 172);
+  color: white;
+  border-radius: 3px;
+}
+
+
+
 @media(max-width: 450px ){
   .section-five-header{
     margin-top: 10px
@@ -156,5 +180,9 @@
 
   .section-five img{
     width: 100vw
+  }
+
+  .footer-content{
+    padding-right: 0;
   }
 }
