@@ -28,7 +28,7 @@
               When you’re putting in the hours
             </div>
 
-            <div class="ui inverted large header">
+            <div class="ui inverted small header">
               There’s nothing worse than running out of battery when you’re in
               the middle of an epic training run. That is, unless you lose
               battery and your GPS capabilities, too.
@@ -51,7 +51,7 @@
             <div class="center aligned row">
             <div class="column">
               <img
-              class="ui large image"
+              class="ui centered large image"
               src="assets/watch.jpg"
             />
             </div>
@@ -80,21 +80,23 @@
       
       <div class="slideshow-container">
         <div class="mySlides fade">
-          <img class='ui large image' src="https://www.suunto.com/globalassets/productimages/suunto-9/black/product-on-wrist/ss050142000-suunto-9-black-product-on-wrist-800x800px-02.jpg?height=550&format=jpg&bgcolor=f6f6f6" >
-          <div class="ui centered large header">Serious durability</div>
+          <img class='ui image' src="https://www.suunto.com/globalassets/productimages/suunto-9/black/product-on-wrist/ss050142000-suunto-9-black-product-on-wrist-800x800px-02.jpg?height=550&format=jpg&bgcolor=f6f6f6" >
+          
+          <div class="ui centered large header"><img class="ui avatar image" src="assets/durable.png">Serious durability</div>
           <div class='text'>The Suunto 9 endured intense testing at the factory as well as by athletes around the world. It’s built to take a beating.</div>
         </div>
       
         <div class="mySlides fade"> 
           <img class='ui large image' src="https://www.suunto.com/globalassets/productimages/suunto-9/black/expressive-images/ss050142000-suunto-9-g1-black-expressive-view-b-01.png?height=550&format=jpg&bgcolor=f6f6f6" >
-          <div class="ui centered large header">Tested tough battery
+          <div class="ui centered large header"><img class="ui avatar image" src="assets/battery.png">Tested tough battery
           </div>
           <div class='text'>Charging reminders, battery life estimates and three predefined battery modes — Performance, Endurance and Ultra — deliver from 25 to 120 hours of recording time.</div>
         </div>
       
         <div class="mySlides fade">
           <img class='ui large image' src="https://www.suunto.com/globalassets/productimages/suunto-9/mobile-app/suunto-app-post-workout-applemap-800x800px-02.png?height=550&format=jpg&bgcolor=f6f6f6">
-          <div class="ui centered large header">More accurate tracking
+          
+          <div class="ui centered large header"><img class="ui avatar image" src="assets/fusetrack.png"> More accurate tracking
             </div>
             <div class='text'>The FuseTrack™ algorithm combines GPS and motion sensor data to improve track and distance accuracy, allowing you to lower GPS power without compromising accuracy.</div>
         </div>
@@ -178,17 +180,13 @@
       function showSlides(n) {
         var i;
         var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
         if (n > slides.length) {slideIndex = 1}    
         if (n < 1) {slideIndex = slides.length}
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";  
         }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
         slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
+        
       }
       </script>
   </body>

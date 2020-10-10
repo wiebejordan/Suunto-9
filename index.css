@@ -16,7 +16,8 @@
 .section-one-dimmer{
   height: 100%;
   width: 100%;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.4);
+  font-size: 20px;
 }
 
 .logo-container{
@@ -29,7 +30,7 @@
 }
 
 .section-one-content{
-  height: calc(100% - 50px);
+  height: calc(100% - 100px);
   width: 100vw;
   display: flex;
   align-items: center;
@@ -39,6 +40,8 @@
 
 
 .section-three{
+  height: auto;
+  width: 100vw;
   background-color: RGB(246, 246, 246) ;
 }
 
@@ -82,11 +85,11 @@
 .text {
   color: #f2f2f2;
   font-size: 15px;
-  padding: 8px 12px;
+  /* padding: 8px 12px; */
   position: relative;
   bottom: 8px;
   width: 100%;
-  text-align: center;
+  text-align: left;
   color: black;
 }
 
@@ -174,6 +177,10 @@
 
 
 @media(max-width: 450px ){
+  .slideshow-container{
+    width: 80vw;
+  }
+
   .section-five-header{
     margin-top: 10px
   }
