@@ -21,12 +21,15 @@
 }
 
 .logo-container{
-  height: 50px;
+  height: 80px;
   width: 100vw;
   box-sizing: border-box;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 25px;
+}
+
+.logo-img{
+  height: 50px;
 }
 
 .section-one-content{
@@ -92,7 +95,7 @@
   position: relative;
   bottom: 8px;
   width: 100%;
-  text-align: left;
+  text-align: center;
   color: black;
 }
 
@@ -189,6 +192,18 @@
 
 
 @media(max-width: 450px ){
+  .logo-container{
+    height: 50px;
+    width: 100vw;
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-top: 5px;
+  }
+  
+  .logo-img{
+    height: 40px;
+  }
+
   .slideshow-container{
     width: 80vw;
   }

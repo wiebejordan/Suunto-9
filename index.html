@@ -17,7 +17,7 @@
         <div class="section-one-dimmer">
         <div class="logo-container">
           <img
-            class="ui small image"
+            class="logo-img"
             src="assets/Suunto-Logo.png"
           />
         </div>
@@ -127,11 +127,12 @@
       </div>
       
       <div class="section-four">
-        
+        <div class='ui raised segment' style='background-color:RGB(246, 246, 246);'>
           <div class="ui vertical stripe quote segment">
             <div class="ui equal width middle aligned internally celled stackable grid">
               <div class="center aligned row">
               <div class="column">
+                
                 <div class="ui container">
                   <div class="ui centered huge header">
                     Who benefits from Suunto 9? 
@@ -144,11 +145,13 @@
               </div>
               
               <div class="column">
-                <img class="ui large image" src="https://www.outsideonline.com/sites/default/files/styles/img_600x600/public/2019/02/11/kilian-jornet-uphill-skiing-2017_s.jpg?itok=jLypDEg_">
-            
+                
+                <img class="ui centered medium image" src="https://www.outsideonline.com/sites/default/files/styles/img_600x600/public/2019/02/11/kilian-jornet-uphill-skiing-2017_s.jpg?itok=jLypDEg_">
+                  
             </div>
             
           </div>
+            </div>
       </div>
     </div>
     </div>
@@ -159,15 +162,15 @@
 
     <div class='section-five'>
       <div class='section-five-header'>
-      <img src='assets/watches.png'/>
+        <img src='assets/watches.png'/>
       </div>
-
       
       <div class='ui container'>
       <div class="ui centered huge header">
         The Suunto 9 is one of many watches in the Suunto lineup, and like most of them it’s handmade in Finland for superior quality. Choose the 9 if battery and durability are your top priorities.
       </div>
       </div>
+      
 
       <div class='section-five-footer'>
                 <div class='footer-content'>
@@ -186,7 +189,7 @@
     </div>
 
     <script>
-      var slideIndex = 1;
+      let slideIndex = 1;
       showSlides(slideIndex);
       
       function plusSlides(n) {
@@ -198,9 +201,9 @@
       }
       
       function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
         if (n > slides.length) {slideIndex = 1}    
         if (n < 1) {slideIndex = slides.length}
         for (i = 0; i < slides.length; i++) {
