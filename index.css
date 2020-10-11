@@ -1,6 +1,4 @@
 
-
-
 .section-one{
   height: 400px;
   width: 100vw;
@@ -33,7 +31,7 @@
 }
 
 .section-one-content{
-  height: calc(100% - 100px);
+  height: calc(100% - 120px);
   width: 100vw;
   display: flex;
   align-items: center;
@@ -41,7 +39,8 @@
 }
 
 .section-two{
-  margin-top: 25px;
+  box-sizing: border-box;
+  padding-top: 25px;
 }
 
 
@@ -52,9 +51,13 @@
 }
 
 .slideshow-container {
-  width: 50vw;
+  width: 70vw;
   position: relative;
   margin: auto;
+}
+
+.slideshow-img{
+  width: 70vw;
 }
 
 .mySlides {
@@ -94,9 +97,10 @@
   /* padding: 8px 12px; */
   position: relative;
   bottom: 8px;
-  width: 100%;
+  width: 70vw;
   text-align: center;
   color: black;
+  
 }
 
 
@@ -136,7 +140,7 @@
 }
 
 .section-four{
-  background-color: RGB(246, 246, 246)
+  /* background-color: RGB(246, 246, 246) */
 }
 
 .section-four p{
@@ -187,6 +191,12 @@
   RGB(42, 126, 172);
   color: white;
   border-radius: 3px;
+  transition: all ease-in-out .2s;
+  font-weight: bold;
+}
+
+.section-five button:hover{
+  background-color: RGB(29, 86, 117);
 }
 
 
@@ -205,7 +215,11 @@
   }
 
   .slideshow-container{
-    width: 80vw;
+    width: 70vw;
+  }
+
+  .prev, .next{
+    display: none;
   }
 
   .section-five-header{
