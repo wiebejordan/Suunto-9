@@ -48,6 +48,8 @@
   font-size: 60px;
   text-align: center;
   font-family: 'Oxygen', sans-serif;
+  
+
 }
 
 .section-one-subheader{
@@ -62,6 +64,7 @@
 
 .section-two-header{
   font-family: 'Oxygen', sans-serif;
+  text-align: center;
 }
 
 
@@ -242,6 +245,7 @@
   border-radius: 3px;
   transition: all ease-in-out .2s;
   font-weight: bold;
+  margin: 15px;
 }
 
 .section-five button:hover{
@@ -262,6 +266,29 @@
 
   .section-one-subheader{
     font-size: 25px;
+  }
+}
+
+@media(max-width: 663px){
+  .logo-container{
+    height: 50px;
+    width: 100vw;
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-top: 5px;
+  }
+  
+  .logo-img{
+    height: 30px;
+  }
+
+  .section-one-header{
+    font-size: 35px;
+    
+  }
+
+  .section-one-subheader{
+    font-size: 20px;
   }
 }
 
@@ -293,6 +320,10 @@
 
   .slideshow-container{
     width: 70vw;
+  }
+
+  .slideshow-header{
+    font-size: 25px;
   }
 
   .prev, .next{
