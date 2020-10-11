@@ -67,7 +67,7 @@
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 35%;
+  top: 30%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -148,6 +148,13 @@
   
 }
 
+.text-2 {
+  font-size: 15px;
+  text-align: center;
+  color: black;
+  
+}
+
 .section-five{
   /* background-color: RGB(246, 246, 246) */
 }
@@ -163,7 +170,9 @@
 }
 
 .section-five img{
-  width: 60vw
+  width: 70vw;
+  max-width: 600px;
+  
 }
 
 .section-five-footer{
