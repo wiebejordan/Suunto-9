@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+
+.body{
+  font-family: 'Oxygen', sans-serif;
+}
 
 .section-one{
   height: 400px;
@@ -35,12 +40,28 @@
   width: 100vw;
   display: flex;
   align-items: center;
+  color: white;
   
+}
+
+.section-one-header{
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.section-one-subheader{
+  font-size: 30px;
+  font-family: 'Oxygen', sans-serif;
 }
 
 .section-two{
   box-sizing: border-box;
   padding-top: 25px;
+}
+
+.section-two-header{
+  font-family: 'Oxygen', sans-serif;
 }
 
 
@@ -58,6 +79,11 @@
 
 .slideshow-img{
   width: 70vw;
+}
+
+.slideshow-header{
+  text-align: center;
+  font-family: 'Oxygen', sans-serif;
 }
 
 .mySlides {
@@ -100,7 +126,7 @@
   width: 70vw;
   text-align: center;
   color: black;
-  
+  font-family: 'Oxygen', sans-serif;
 }
 
 
@@ -143,9 +169,10 @@
   /* background-color: RGB(246, 246, 246) */
 }
 
-.section-four p{
+.section-four h3{
   text-align: left;
-  
+  font-family:'Oxygen', sans-serif ;
+  font-size: 20px;
 }
 
 .text-2 {
@@ -189,6 +216,19 @@
   height: 100%;
   width: 100%;
   background-color: rgba(0,0,0,0.3);
+  
+}
+
+.footer-header{
+  color: white;
+  margin: 0px;
+  font-family:'Oxygen', sans-serif ;
+}
+
+.footer-subheader{
+  color: white;
+  margin: 0;
+  font-family:'Oxygen', sans-serif ;
 }
 
 
@@ -209,6 +249,21 @@
 }
 
 
+@media(min-width: 1050px){
+  .prev, .next{
+    top: 35%;
+  }
+}
+
+@media(max-width: 1099px ){
+  .section-one-header{
+    font-size: 40px;
+  }
+
+  .section-one-subheader{
+    font-size: 25px;
+  }
+}
 
 @media(max-width: 450px ){
   .logo-container{
@@ -221,6 +276,19 @@
   
   .logo-img{
     height: 40px;
+  }
+
+  .section-one-header{
+    font-size: 35px;
+    
+  }
+
+  .section-one-subheader{
+    font-size: 20px;
+  }
+
+  .section-two-header{
+    font-size: 20px;
   }
 
   .slideshow-container{
