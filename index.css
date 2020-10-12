@@ -113,14 +113,15 @@
 }
 
 .text {
-  color: #f2f2f2;
+  height: 50px;
+  width: 50vw;
   font-size: 15px;
   position: relative;
   bottom: 8px;
-  width: 50vw;
   text-align: center;
   color: black;
   font-family: "Oxygen", sans-serif;
+  
 }
 
 .dot {
@@ -237,6 +238,11 @@
     font-size: 35px;
   }
 
+  .dot{
+    height: 70px;
+    width: 70px;
+  }
+
   .section-four h3 {
     font-size: 25px;
     font-weight: normal;
@@ -252,6 +258,8 @@
   .next {
     top: 35%;
   }
+
+  
 }
 
 @media (max-width: 1099px) {
@@ -356,7 +364,14 @@
 
   .text {
     font-size: 15px;
+    height: 50px;
     width: 70vw;
+    margin-bottom: 40px;
+  }
+
+  .dot{
+    height: 70px;
+    width: 70px
   }
 
   .prev,
